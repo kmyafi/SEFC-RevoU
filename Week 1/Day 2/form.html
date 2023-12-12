@@ -1,6 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1>Forms</h1>
+        <form action="" method="post">
+            <label for="name">Nama : </label>
+            <input id="name" type="text" />
+            <br/>
+            <input type="password" required>
+            <br/>
+            <input type="checkbox">
+            <br/>
+            <input type="radio">
+            <br/>
+            <input type="number" min="1" max="10">
+            <br/>
+            <textarea rows="8" cols="64">Ketik di sini</textarea>
+            <br/>
+            <input type="submit" value="OK">
+        </form>
+
+        <hr>
+        <h1>Select Forms</h1>
+        <p>Apa warna favoritmu?</p>
+        <select>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Hijau</option>
+            <option>Biru</option>
+        </select>
+
+        <p>Apa makanan favoritmu?</p>
+        <select>
+            <option>Papeda</option>
+            <option>Soto Kwali</option>
+            <option>Sate Padang</option>
+            <option selected>Gudeg</option>
+        </select>
+
+        <hr>
+        <h1>Option Groups</h1>
+        <p>Minuman favoritmu?</p>
+        <select>
+            <optgroup label="Jus Buah">
+                <option>Jus Apel</option>
+                <option>Jus Jeruk</option>
+                <option>Jus Mangga</option>
+            </optgroup>
+            <optgroup label="Jamu">
+                <option>Kencur</option>
+                <option>Asem</option>
+                <option>Brotowali</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <h1>Field Sets & Legends</h1>
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <p>
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama">
+
+            <p>
+                <label for="usia">Usia:</label>
+                <input type="number" name="usia">
+        </fieldset>
+    </body>
+    <hr>
+</html>
+
+<html>
+    <head>
         <title>Latihan form</title>
     </head>
     <body>
@@ -23,11 +98,11 @@
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label><br>
 
-            <input type="radio" id="html" name="fav_language" value="CSS">
-            <label for="html">CSS</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
 
-            <input type="radio" id="html" name="fav_language" value="JavaScript">
-            <label for="html">JavaScript</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
 
             <input type="submit" value="Submit">
         </form>
